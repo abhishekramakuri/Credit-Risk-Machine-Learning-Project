@@ -81,7 +81,7 @@ A custom function calculates:
 
 The following chart visualizes how expected revenue varies with threshold selection:
 
-![Revenue vs Threshold](output.png)
+![Revenue vs Threshold](images/output.png)
 
 
 
