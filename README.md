@@ -4,7 +4,7 @@ This project builds a machine learning pipeline to **predict credit card default
 
 ---
 
-## 📁 Repository Contents
+##  Repository Contents
 
 - `Credit_Risk_Model.ipynb`: End-to-end notebook for data processing, feature engineering, modeling, and strategy simulation.
 - `strategy_results.csv`: Final results for different thresholds — includes default rates and expected revenue.
@@ -12,7 +12,7 @@ This project builds a machine learning pipeline to **predict credit card default
 
 ---
 
-## 📊 Data Overview
+## Data Overview
 
 Data source: [Amex Default Prediction – Kaggle](https://www.kaggle.com/competitions/amex-default-prediction/data)
 
@@ -22,18 +22,18 @@ Data source: [Amex Default Prediction – Kaggle](https://www.kaggle.com/competi
 
 ---
 
-## 🔧 Methodology
+## Methodology
 
-### ✅ Preprocessing
+### Preprocessing
 
 - One-hot encoding for categorical features.
 - Aggregated temporal features (mean, max, recent value, etc.).
 - Outlier treatment and normalization for Neural Networks.
 - Missing values imputed with 0.
 
-### 🚀 Models Used
+### Models Used
 
-#### 🌲 XGBoost
+#### XGBoost
 - Feature selection using importance threshold (> 0.5%).
 - Grid search across:
   - Trees: 50, 100, 300
@@ -41,7 +41,7 @@ Data source: [Amex Default Prediction – Kaggle](https://www.kaggle.com/competi
   - Subsample & Colsample: 50%, 80%, 100%
   - Class weight: 1, 5, 10
 
-#### 🧠 Neural Network
+####  Neural Network
 - Built using Keras.
 - Tuned on:
   - Hidden layers: 2, 4
@@ -52,7 +52,7 @@ Data source: [Amex Default Prediction – Kaggle](https://www.kaggle.com/competi
 
 ---
 
-## 🎯 Lending Strategy
+##  Lending Strategy
 
 The final model output (Probability of Default) is used to implement two strategies:
 
@@ -66,31 +66,28 @@ A custom function calculates:
 
 ---
 
-## ✅ Results Summary
+## Results Summary
 
 | Strategy     | Threshold | Default Rate | Expected Revenue | Accepted Customers |
 |--------------|-----------|--------------|------------------|---------------------|
 | Conservative | **0.17**  | **0.27%**     | **$902.70**      | 4,071               |
 | Aggressive   | **0.58**  | **26.27%**    | **$1,719.64**    | 13,768              |
 
-> 📄 Full results are available in `strategy_results.csv`
+>  Full results are available in `strategy_results.csv`
 
 ---
 
-## 📊 Strategy Evaluation
+##  Strategy Evaluation
 
 The following chart visualizes how expected revenue varies with threshold selection:
 
 ![Revenue vs Threshold](output.png)
-## 📊 Strategy Evaluation
-
-The plot below shows how expected revenue changes with the model's decision threshold:
 
 
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - Python, Pandas, NumPy
 - XGBoost, Scikit-Learn, Keras/TensorFlow
@@ -99,7 +96,7 @@ The plot below shows how expected revenue changes with the model's decision thre
 
 ---
 
-## 📌 Author
+##  Author
 
 **Abhishek D Joy**  
 M.S. Business Analytics | The University of Texas at Dallas  
